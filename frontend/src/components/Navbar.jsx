@@ -12,12 +12,12 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-gray-800 text-white flex items-center justify-between px-6 pb-3 py-3 shadow-md z-50">
-      {/* Left side: Title */}
+     
       <div className="text-xl font-semibold cursor-pointer" onClick={() => navigate("/customers")}>
         Customers
       </div>
 
-      {/* Right side: Login or Logout button */}
+      
       <div>
         {token ? (
           <button
