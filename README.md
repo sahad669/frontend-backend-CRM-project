@@ -56,5 +56,6 @@ npm run dev
 The frontend will run on http://localhost:5173
 
 ## 🎥 Demo Video
-[Watch the demo](./media/demo-video.mp4)
+[Watch the demo](./media/Vite+React-Google.mp4)
+
 
