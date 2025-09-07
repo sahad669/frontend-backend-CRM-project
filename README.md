@@ -55,6 +55,6 @@ npm install
 npm run dev
 The frontend will run on http://localhost:5173
 
-📹 Demo
+## 🎥 Demo Video
+[Watch the demo](./media/demo-video.mp4)
 
-Available in media/
