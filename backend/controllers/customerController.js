@@ -4,7 +4,7 @@ import customerModel from "../models/customerModel.js";
 export const createCustomer = async (req, res) => {
     try {
         const { name, email, phone } = req.body;
-        const createdBy = req.user?._id; // Make sure a user is set in req.user (e.g., from authentication middleware)
+        const createdBy = req.user?._id; 
         if (!name || !email || !phone) {
             return res.status(400).json({ message: 'name, email, phone are required' });
         }
@@ -59,7 +59,7 @@ export const deleteCustomer = async (req, res) => {
 // Get all customers
 export const getAllCustomers = async (req, res) => {
   try {
-    // Populate only the 'name' and 'email' fields of the createdBy user
+   
     const customers = await customerModel.find({})
       .populate('createdBy', 'name ');
     res.status(200).json({ message: "fetched customers", customers });
