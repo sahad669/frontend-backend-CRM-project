@@ -22,7 +22,7 @@ export const register = async (req, res) => {
       password: hashpass,
     });
 
-    // Fix: use _id for JWT payload key
+    
     const token = jwt.sign(
       { _id: newUser._id, name: newUser.name },
       process.env.JWT_SECRET
@@ -53,7 +53,7 @@ export const login = async (req, res) => {
       return res.status(401).json({ message: "Password does not match" });
     }
 
-    // Fix: use _id for JWT payload key
+   
     const token = jwt.sign(
       { _id: userExist._id, name: userExist.name },
       process.env.JWT_SECRET
