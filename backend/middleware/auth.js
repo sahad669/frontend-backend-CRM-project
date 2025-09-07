@@ -16,7 +16,7 @@ export const isLogged = (req, res, next) => {
     if (!verified) {
       return res.status(403).json({ message: "Invalid token" });
     }
-    req.user = verified; // verified will now have _id
+    req.user = verified; 
     next();
   } catch (error) {
     return res.status(403).json({ message: "Token is not valid" });
