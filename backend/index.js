@@ -10,8 +10,8 @@ const app = express()
 app.use(express.json())
 app.use(cors());
 
-app.use("/api/users", userRouter);      
-app.use("/api/customers", customerRouter);
+app.use("/api/users",userRouter);      
+app.use("/api/customers",customerRouter);
 
 connect()
 app.listen(process.env.PORT,()=>{
